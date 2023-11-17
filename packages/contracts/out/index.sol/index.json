@@ -1,0 +1,138 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/codegen/index.sol",
+    "id": 81431,
+    "exportedSymbols": {
+      "Claims": [
+        82131
+      ],
+      "ClaimsTableId": [
+        81487
+      ],
+      "Tasks": [
+        83973
+      ],
+      "TasksData": [
+        82202
+      ],
+      "TasksTableId": [
+        82188
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:206:142",
+    "nodes": [
+      {
+        "id": 81423,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:142",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 81427,
+        "nodeType": "ImportDirective",
+        "src": "108:68:142",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Tasks.sol",
+        "file": "./tables/Tasks.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 81431,
+        "sourceUnit": 83974,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 81424,
+              "name": "Tasks",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 83973,
+              "src": "117:5:142",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 81425,
+              "name": "TasksData",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82202,
+              "src": "124:9:142",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 81426,
+              "name": "TasksTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82188,
+              "src": "135:12:142",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 81430,
+        "nodeType": "ImportDirective",
+        "src": "177:60:142",
+        "nodes": [],
+        "absolutePath": "src/codegen/tables/Claims.sol",
+        "file": "./tables/Claims.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 81431,
+        "sourceUnit": 82132,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 81428,
+              "name": "Claims",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 82131,
+              "src": "186:6:142",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 81429,
+              "name": "ClaimsTableId",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 81487,
+              "src": "194:13:142",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 142
+}
