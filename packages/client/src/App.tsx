@@ -1,6 +1,8 @@
 import { BrowserProvider, ethers, Contract } from "ethers";
 import { useMUD } from "./MUDContext";
 import { useState } from "react";
+import { Header } from "./Header";
+import { FirstSection } from "./FirstSection";
 
 let abi = [
   {
@@ -56,53 +58,13 @@ declare global {
   }
 }
 
-export async function getMetamaskAddress() {
-  // TODO: ask for the correct network
-  try {
-    const accounts = await window.ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    return accounts[0];
-  } catch (e) {
-    return "";
-  }
-}
-
 export const App = () => {
-  const [wallet, setWallet] = useState("");
   return (
     <>
-      <div className="w-full flex flex-col md:flex-row bg-green-300">
-        <div className="grid w-full md:w-[50vw] justify-items-center md:justify-items-start">
-          <div className="w-fit">Keoken</div>
-        </div>
-        <div className="grid w-full md:w-[50vw] justify-items-center md:justify-items-end">
-          <div
-            className="w-fit cursor-pointer"
-            onClick={async () => {
-              try {
-                let wallet = await getMetamaskAddress();
-                setWallet(wallet);
-              } catch (e) {
-                setWallet("");
-              }
-            }}
-          >
-            {wallet === "" ? "Connect your wallet" : wallet}
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-row w-full min-h-[300px]">
-        <div className="w-[50vw] flex">
-          <div className="m-auto">
-            Bridging communities through NFT ownership
-          </div>
-        </div>
-        <div className="w-[50vw] flex min-h-[300px]">
-          <div className="m-auto w-fit">Gatitos</div>
-        </div>
-      </div>
+      <section className="bg-green-300 h-fit md:min-h-screen flex flex-col">
+        <Header />
+        <FirstSection />
+      </section>
 
       <button
         onClick={async (e) => {
