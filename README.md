@@ -51,3 +51,7 @@ You need to create 2 files:
   `export const GNOSIS_MAIN_HTTP = ""
 export const GNOSIS_MAIN_WS = ""
 `
+
+## World deployed to Gnosis-Mainnet
+
+[0x7fe5ed4d250c5a57c85471fd3addfe840c00988a](https://gnosisscan.io/address/0x7fe5ed4d250c5a57c85471fd3addfe840c00988a)
