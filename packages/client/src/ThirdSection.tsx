@@ -14,7 +14,7 @@ async function claimNFT(collection: string, id: string) {
       awaitedSigner,
     );
     console.log(c);
-    let tx = c.claim(collection, Number(id));
+    let tx = await c.claim(collection, Number(id));
     console.log(tx);
   } catch (e) {
     alert(e);
