@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ["Bowlby One SC", "sans-serif"],
+        secondary: ["JetBrains Mon", "monospace"],
       },
     },
   },

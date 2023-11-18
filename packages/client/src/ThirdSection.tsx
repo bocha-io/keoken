@@ -1,10 +1,44 @@
+import { useState } from "react";
 import { Metamask } from "./Header";
+import { testData } from "./testData";
+
+async function getNFTS(
+  address: string,
+  setter: React.Dispatch<React.SetStateAction<never[]>>,
+) {
+  const resp = await fetch(`https://keokenapi.bocha.io/api/nfts/${address}`);
+
+  const parsed = await resp.json();
+
+  console.log(parsed);
+
+  // @ts-ignore
+  let nfts = [];
+  // @ts-ignore
+  parsed.data.forEach((e) => {
+    let symbol = e.symbol;
+    // @ts-ignore
+    e.assets.forEach((a) => {
+      nfts.push({
+        img: a.image_uri,
+        collection: a.contract_address,
+        id: a.contract_token_id,
+        symbol: symbol,
+      });
+    });
+  });
+
+  // @ts-ignore
+  setter(nfts);
+}
 
 export const ThirdSection = ({
   walletHook,
 }: {
   walletHook: [string, React.Dispatch<React.SetStateAction<string>>];
 }) => {
+  const [nfts, setNfts] = useState([]);
+
   const tempData = [
     { wallet: "0x0000000000000000000000000000000000000", coins: 1000 },
     { wallet: "0x0000000000000000000000000000000000001", coins: 2000 },
@@ -20,6 +54,67 @@ export const ThirdSection = ({
             </div>
             <img src="garra.png" alt="" className="" />
           </div>
+          <div className="flex w-full">
+            <div className="flex flex-col overflow-y-auto max-h-[30vh] font-primary text-left w-fit mx-auto">
+              {
+                // @ts-ignore
+                nfts.map((e, i) => {
+                  // @ts-ignore
+                  return (
+                    <div className="flex flex-row border-2 border-black rounded-xl p-2 m-2 space-x-4">
+                      <img
+                        key={i}
+                        // @ts-ignore
+                        src={e.img}
+                        alt=""
+                        className="max-w-[150px] my-auto "
+                      />
+                      <div className="flex flex-col font-secondary">
+                        <p>
+                          {
+                            // @ts-ignore
+                            e.symbol
+                          }
+                        </p>
+                        <p>
+                          Collection:{" "}
+                          {
+                            // @ts-ignore
+                            e.collection.substring(0, 4) +
+                              "..." +
+                              e.collection.substring(
+                                e.collection.length - 4,
+                                e.collection.length,
+                              )
+                          }
+                        </p>
+                        <p>
+                          ID:{" "}
+                          {
+                            // @ts-ignore
+                            e.id.substring(0, 4) +
+                              "..." +
+                              e.id.substring(e.id.length - 4, e.id.length)
+                          }
+                        </p>
+                        <button className="p-2 m-2 border-2 border-black rounded-xl cursor-pointer">
+                          CLAIM
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+          <button
+            className="font-primary text-2xl border-black border-2 p-2 m-2 rounded-xl cursor-pointer"
+            onClick={() => {
+              getNFTS("0xB0062957F5565090490ac34fe1EE4076621Df6A8", setNfts);
+            }}
+          >
+            Check your NFTS
+          </button>
         </div>
       </div>
       <div className="w-[90vw] lg:w-[45vw] my-auto mx-auto">
