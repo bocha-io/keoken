@@ -3,12 +3,26 @@
  * (https://viem.sh/docs/getting-started.html).
  * This line imports the functions we need from it.
  */
-import { createPublicClient, fallback, webSocket, http, createWalletClient, Hex, parseEther, ClientConfig } from "viem";
+import {
+  createPublicClient,
+  fallback,
+  webSocket,
+  http,
+  createWalletClient,
+  Hex,
+  parseEther,
+  ClientConfig,
+} from "viem";
 import { createFaucetService } from "@latticexyz/services/faucet";
 import { syncToZustand } from "@latticexyz/store-sync/zustand";
 import { getNetworkConfig } from "./getNetworkConfig";
 import IWorldAbi from "contracts/out/IWorld.sol/IWorld.abi.json";
-import { createBurnerAccount, getContract, transportObserver, ContractWrite } from "@latticexyz/common";
+import {
+  createBurnerAccount,
+  getContract,
+  transportObserver,
+  ContractWrite,
+} from "@latticexyz/common";
 import { Subject, share } from "rxjs";
 
 /*
@@ -20,8 +34,32 @@ import { Subject, share } from "rxjs";
  * for the source of this information.
  */
 import mudConfig from "contracts/mud.config";
+import { GNOSIS_MAIN_HTTP, GNOSIS_MAIN_WS } from "./constants";
 
 export type SetupNetworkResult = Awaited<ReturnType<typeof setupNetwork>>;
+
+const gnosisMUD = {
+  name: "gno",
+  id: 100,
+  network: 100,
+  nativeCurrency: "xDAI",
+  rpcUrls: {
+    default: {
+      http: [GNOSIS_MAIN_HTTP],
+      webSocket: [GNOSIS_MAIN_WS],
+    },
+    public: {
+      http: [GNOSIS_MAIN_HTTP],
+      webSocket: [GNOSIS_MAIN_WS],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Blockscout",
+      url: "https://gnosisscan.io/",
+    },
+  },
+};
 
 export async function setupNetwork() {
   const networkConfig = await getNetworkConfig();
@@ -31,7 +69,7 @@ export async function setupNetwork() {
    * (https://viem.sh/docs/clients/public.html)
    */
   const clientOptions = {
-    chain: networkConfig.chain,
+    chain: gnosisMUD,
     transport: transportObserver(fallback([webSocket(), http()])),
     pollingInterval: 1000,
   } as const satisfies ClientConfig;
@@ -58,10 +96,10 @@ export async function setupNetwork() {
    * Create an object for communicating with the deployed World.
    */
   const worldContract = getContract({
-    address: networkConfig.worldAddress as Hex,
+    address: "0x7bd472fc101d3a7caf3064b7c5788965cb34685f" as Hex,
     abi: IWorldAbi,
     publicClient,
-    walletClient: burnerWalletClient,
+    // walletClient: burnerWalletClient,
     onWrite: (write) => write$.next(write),
   });
 
@@ -71,11 +109,17 @@ export async function setupNetwork() {
    * to the viem publicClient to make RPC calls to fetch MUD
    * events from the chain.
    */
-  const { tables, useStore, latestBlock$, storedBlockLogs$, waitForTransaction } = await syncToZustand({
+  const {
+    tables,
+    useStore,
+    latestBlock$,
+    storedBlockLogs$,
+    waitForTransaction,
+  } = await syncToZustand({
     config: mudConfig,
-    address: networkConfig.worldAddress as Hex,
+    address: "0x7bd472fc101d3a7caf3064b7c5788965cb34685f" as Hex,
     publicClient,
-    startBlock: BigInt(networkConfig.initialBlockNumber),
+    startBlock: BigInt("31009203"),
   });
 
   /*

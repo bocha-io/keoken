@@ -1,23 +1,24 @@
 import { useState } from "react";
 import { Metamask } from "./Header";
-import { testData } from "./testData";
 import { BrowserProvider, Contract } from "ethers";
 import abi from "contracts/out/IWorld.sol/IWorld.abi.json";
 
 async function claimNFT(collection: string, id: string) {
-  console.log(Number(id));
-  return;
-  const signer = new BrowserProvider(window.ethereum).getSigner();
-  let awaitedSigner = await signer;
-  console.log(signer);
-  let c = new Contract(
-    "0x6e9474e9c83676b9a71133ff96db43e7aa0a4342",
-    abi,
-    awaitedSigner,
-  );
-  console.log(c);
-  let tx = c.claim(collection, 1);
-  console.log(tx);
+  try {
+    const signer = new BrowserProvider(window.ethereum).getSigner();
+    let awaitedSigner = await signer;
+    console.log(signer);
+    let c = new Contract(
+      "0x7bd472fc101d3a7caf3064b7c5788965cb34685f",
+      abi,
+      awaitedSigner,
+    );
+    console.log(c);
+    let tx = c.claim(collection, Number(id));
+    console.log(tx);
+  } catch (e) {
+    alert(e);
+  }
 }
 
 async function getNFTS(
