@@ -19,11 +19,19 @@
     "@latticexyz/store-sync": "2.0.0-next.14",
     "@latticexyz/utils": "2.0.0-next.14",
     "@latticexyz/world": "2.0.0-next.14",
+    "@walletconnect/core": "^2.10.5",
+    "@walletconnect/ethereum-provider": "^2.10.5",
+    "@walletconnect/modal": "^2.6.2",
+    "@walletconnect/utils": "^2.10.5",
+    "@walletconnect/web3wallet": "^1.9.4",
+    "@web3modal/wagmi": "^3.3.2",
     "contracts": "workspace:*",
+    "ethers": "^6.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "7.5.5",
-    "viem": "1.14.0"
+    "viem": "1.14.0",
+    "wagmi": "^1.4.7"
   },
   "devDependencies": {
     "@types/react": "18.2.22",
