@@ -5,6 +5,7 @@ import { Header } from "./Header";
 import { FirstSection } from "./FirstSection";
 import { SecondSection } from "./SecondSection";
 import { ThirdSection } from "./ThirdSection";
+import { Footer } from "./Footer";
 
 let abi = [
   {
@@ -83,7 +84,12 @@ export const App = () => {
         <ThirdSection walletHook={walletHook} />
       </section>
 
+      <section id="footer" className="bg-[#E9FFB4] h-content">
+        <Footer />
+      </section>
+
       <button
+        className="hidden"
         onClick={async (e) => {
           e.preventDefault();
           // let address = await getMetamaskAddress();
