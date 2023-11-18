@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Header } from "./Header";
 import { FirstSection } from "./FirstSection";
 import { SecondSection } from "./SecondSection";
+import { ThirdSection } from "./ThirdSection";
 
 let abi = [
   {
@@ -60,15 +61,26 @@ declare global {
 }
 
 export const App = () => {
+  const walletHook = useState("");
   return (
     <>
-      <section className="bg-green-300 h-fit md:min-h-screen flex flex-col">
-        <Header />
+      <section className=" bg-gradient-to-b from-[#E9FFB4] via-[#E9FFB4] to-white  h-fit md:min-h-screen flex flex-col">
+        <Header walletHook={walletHook} />
         <FirstSection />
       </section>
 
-      <section id="second" className="bg-white h-fit md:min-h-screen">
+      <section
+        id="second"
+        className="bg-gradient-to-b from-white via-[#FFFFFF] to-[#FFFFFF] h-fit md:min-h-screen"
+      >
         <SecondSection />
+      </section>
+
+      <section
+        id="third"
+        className="bg-gradient-to-b from-white via-[#E9FFB4] to-[#E9FFB4] h-fit md:min-h-screen"
+      >
+        <ThirdSection walletHook={walletHook} />
       </section>
 
       <button

@@ -12,10 +12,72 @@ export async function getMetamaskAddress() {
   }
 }
 
-export const Header = () => {
-  const [wallet, setWallet] = useState("");
+export const Metamask = ({
+  walletHook,
+}: {
+  walletHook: [string, React.Dispatch<React.SetStateAction<string>>];
+}) => {
   return (
-    <div className="w-full flex flex-col md:flex-row bg-green-500 p-6 lg:p-2">
+    <div
+      className="w-fit cursor-pointer pt-4 lg:pt-0"
+      onClick={async () => {
+        try {
+          let wallet = await getMetamaskAddress();
+          walletHook[1](wallet);
+        } catch (e) {
+          walletHook[1]("");
+        }
+      }}
+    >
+      {walletHook[0] === "" ? (
+        <div className="border-4 border-black rounded-[60px] pr-4 bg-white text-2xl flex flex-row justify-items-center max-h-[65px]  lg:max-h-[45px]">
+          <img
+            src="mm-logo.png"
+            alt="mm logo"
+            className="max-h-[65px] lg:max-h-[38px] my-auto "
+          />
+          <span className="my-auto pl-10 hidden lg:block font-primary">
+            Connect your wallet
+          </span>
+          <span className="my-auto pl-10 block lg:hidden font-primary">
+            Connect{" "}
+          </span>
+        </div>
+      ) : (
+        <div className="border-4 border-black rounded-[60px] pr-4  bg-white text-2xl flex flex-row justify-items-center max-h-[65px] lg:max-h-[45px]">
+          <img
+            src="mm-logo.png"
+            alt="mm logo"
+            className="max-h-[65px] lg:max-h-[38px] my-auto "
+          />
+
+          <span className="my-auto pl-10 hidden lg:block font-primary">
+            {walletHook[0].substr(0, 4)}...
+            {walletHook[0].substr(
+              walletHook[0].length - 10,
+              walletHook[0].length,
+            )}
+          </span>
+          <span className="my-auto pl-10 block lg:hidden font-primary">
+            {walletHook[0].substr(0, 4)}...
+            {walletHook[0].substr(
+              walletHook[0].length - 4,
+              walletHook[0].length,
+            )}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export const Header = ({
+  walletHook,
+}: {
+  walletHook: [string, React.Dispatch<React.SetStateAction<string>>];
+}) => {
+  return (
+    <div className="w-full flex flex-col md:flex-row bg-[#DCF693] p-6 lg:p-2">
       <div className="grid w-full md:w-[50vw] justify-items-center md:justify-items-start">
         <div className="w-fit">
           <div className="flex justify-center lg:justify-end">
@@ -28,48 +90,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="grid w-full md:w-[50vw] justify-items-center md:justify-items-end">
-        <div
-          className="w-fit cursor-pointer pt-4 lg:pt-0"
-          onClick={async () => {
-            try {
-              let wallet = await getMetamaskAddress();
-              setWallet(wallet);
-            } catch (e) {
-              setWallet("");
-            }
-          }}
-        >
-          {wallet === "" ? (
-            <div className="border-4 border-black rounded-[60px] pr-4 bg-white text-3xl flex flex-row justify-items-center max-h-[65px]  lg:max-h-[45px]">
-              <img
-                src="mm-logo.png"
-                alt="mm logo"
-                className="max-h-[65px] lg:max-h-[38px] my-auto "
-              />
-              <span className="my-auto pl-10 hidden lg:block">
-                Connect your wallet
-              </span>
-              <span className="my-auto pl-10 block lg:hidden ">Connect </span>
-            </div>
-          ) : (
-            <div className="border-4 border-black rounded-[60px] pr-4  bg-white text-3xl flex flex-row justify-items-center max-h-[65px] lg:max-h-[45px]">
-              <img
-                src="mm-logo.png"
-                alt="mm logo"
-                className="max-h-[65px] lg:max-h-[38px] my-auto "
-              />
-
-              <span className="my-auto pl-10 hidden lg:block">
-                {wallet.substr(0, 4)}...
-                {wallet.substr(wallet.length - 10, wallet.length)}
-              </span>
-              <span className="my-auto pl-10 block lg:hidden">
-                {wallet.substr(0, 4)}...
-                {wallet.substr(wallet.length - 4, wallet.length)}
-              </span>
-            </div>
-          )}
-        </div>
+        <Metamask walletHook={walletHook} />
       </div>
     </div>
   );

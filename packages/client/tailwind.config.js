@@ -6,7 +6,11 @@ export default {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["Bowlby One SC", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
