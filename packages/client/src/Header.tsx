@@ -77,7 +77,7 @@ export const Header = ({
   walletHook: [string, React.Dispatch<React.SetStateAction<string>>];
 }) => {
   return (
-    <div className="w-full flex flex-col md:flex-row bg-[#DCF693] p-6 lg:p-2">
+    <div className="w-full flex flex-col md:flex-row bg-white border-b-2 border-black  p-6 lg:p-2">
       <div className="grid w-full md:w-[50vw] justify-items-center md:justify-items-start">
         <div className="w-fit">
           <div className="flex justify-center lg:justify-end">

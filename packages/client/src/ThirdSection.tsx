@@ -58,11 +58,7 @@ export const ThirdSection = ({
   walletHook: [string, React.Dispatch<React.SetStateAction<string>>];
 }) => {
   const [nfts, setNfts] = useState([]);
-
-  // const tempData = [
-  //   { wallet: "0x0000000000000000000000000000000000000", coins: 1000 },
-  //   { wallet: "0x0000000000000000000000000000000000001", coins: 2000 },
-  // ];
+  const [personalRanking, setPersonalRanking] = useState(0);
 
   const {
     network: { useStore, tables },
@@ -71,10 +67,39 @@ export const ThirdSection = ({
   const tempData = useStore((store) => {
     const coins = Object.values(store.getRecords(tables.Coins));
     console.log(coins);
-    return coins.map((e) => ({
+    let myCoins = 0;
+    if (walletHook[0] !== "") {
+      const myCoinsTemp = coins.filter((e) => {
+        if (
+          e.key.key
+            .toLowerCase()
+            .includes(
+              walletHook[0].substring(2, walletHook[0].length).toLowerCase(),
+            )
+        ) {
+          return true;
+        }
+        return false;
+      });
+      if (myCoinsTemp.length > 0) {
+        myCoins = myCoinsTemp[0].value.value;
+      }
+      if (myCoins != personalRanking) {
+        setPersonalRanking(myCoins);
+      }
+    }
+
+    const temp = coins.map((e) => ({
       wallet: e.key.key,
       coins: e.value.value,
     }));
+
+    return temp.sort(function (a, b) {
+      if (a.coins > b.coins) {
+        return 1;
+      }
+      return 0;
+    });
   });
 
   return (
@@ -133,9 +158,13 @@ export const ThirdSection = ({
                         </p>
                         <button
                           className="p-2 m-2 border-2 border-black rounded-xl cursor-pointer"
-                          onClick={async () =>
-                            await claimNFT(e.collection, e.id)
-                          }
+                          onClick={async () => {
+                            if (walletHook[0] === "") {
+                              alert("connect your wallet first!");
+                            } else {
+                              await claimNFT(e.collection, e.id);
+                            }
+                          }}
                         >
                           CLAIM
                         </button>
@@ -149,7 +178,11 @@ export const ThirdSection = ({
           <button
             className="font-primary text-2xl border-black border-2 p-2 m-2 rounded-xl cursor-pointer"
             onClick={() => {
-              getNFTS("0xB0062957F5565090490ac34fe1EE4076621Df6A8", setNfts);
+              if (walletHook[0] === "") {
+                alert("connect your wallet first!");
+              } else {
+                getNFTS(walletHook[0], setNfts);
+              }
             }}
           >
             Check your NFTS
@@ -174,7 +207,7 @@ export const ThirdSection = ({
               />
 
               <span className="font-primary text-2xl my-auto px-3">
-                Personal ranking: 500
+                Personal ranking: {personalRanking}
               </span>
 
               <img

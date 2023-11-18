@@ -15,8 +15,7 @@ export const SecondSection = () => {
         <div className="w-full lg:w-[50vw] 2xl:w-[35vw] h-full my-auto">
           <div className="flex flex-row text-black font-secondary h-full">
             <div className="flex flex-col justify-items-center my-auto space-y-4 text-xl xl:text-2xl text-center xl:text-left w-full">
-              <p className="text-center">Keoken text</p>
-              <p className="text-center">Keoken text 2</p>
+              <img className="my-10 md:my-0" src="textkeoken.png" alt="text" />
             </div>
           </div>
         </div>
