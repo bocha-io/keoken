@@ -10,31 +10,28 @@
   },
   "ast": {
     "absolutePath": "src/codegen/index.sol",
-    "id": 81431,
+    "id": 77289,
     "exportedSymbols": {
-      "Claims": [
-        82131
+      "Claimed": [
+        78263
       ],
-      "ClaimsTableId": [
-        81487
+      "ClaimedTableId": [
+        77345
       ],
-      "Tasks": [
-        83973
+      "Coins": [
+        78974
       ],
-      "TasksData": [
-        82202
-      ],
-      "TasksTableId": [
-        82188
+      "CoinsTableId": [
+        78330
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:206:142",
+    "src": "32:198:133",
     "nodes": [
       {
-        "id": 81423,
+        "id": 77282,
         "nodeType": "PragmaDirective",
-        "src": "32:25:142",
+        "src": "32:25:133",
         "nodes": [],
         "literals": [
           "solidity",
@@ -44,48 +41,36 @@
         ]
       },
       {
-        "id": 81427,
+        "id": 77285,
         "nodeType": "ImportDirective",
-        "src": "108:68:142",
+        "src": "108:57:133",
         "nodes": [],
-        "absolutePath": "src/codegen/tables/Tasks.sol",
-        "file": "./tables/Tasks.sol",
+        "absolutePath": "src/codegen/tables/Coins.sol",
+        "file": "./tables/Coins.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 81431,
-        "sourceUnit": 83974,
+        "scope": 77289,
+        "sourceUnit": 78975,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 81424,
-              "name": "Tasks",
+              "id": 77283,
+              "name": "Coins",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 83973,
-              "src": "117:5:142",
+              "referencedDeclaration": 78974,
+              "src": "117:5:133",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
           },
           {
             "foreign": {
-              "id": 81425,
-              "name": "TasksData",
+              "id": 77284,
+              "name": "CoinsTableId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 82202,
-              "src": "124:9:142",
-              "typeDescriptions": {}
-            },
-            "nameLocation": "-1:-1:-1"
-          },
-          {
-            "foreign": {
-              "id": 81426,
-              "name": "TasksTableId",
-              "nodeType": "Identifier",
-              "overloadedDeclarations": [],
-              "referencedDeclaration": 82188,
-              "src": "135:12:142",
+              "referencedDeclaration": 78330,
+              "src": "124:12:133",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -94,36 +79,36 @@
         "unitAlias": ""
       },
       {
-        "id": 81430,
+        "id": 77288,
         "nodeType": "ImportDirective",
-        "src": "177:60:142",
+        "src": "166:63:133",
         "nodes": [],
-        "absolutePath": "src/codegen/tables/Claims.sol",
-        "file": "./tables/Claims.sol",
+        "absolutePath": "src/codegen/tables/Claimed.sol",
+        "file": "./tables/Claimed.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 81431,
-        "sourceUnit": 82132,
+        "scope": 77289,
+        "sourceUnit": 78274,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 81428,
-              "name": "Claims",
+              "id": 77286,
+              "name": "Claimed",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 82131,
-              "src": "186:6:142",
+              "referencedDeclaration": 78263,
+              "src": "175:7:133",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
           },
           {
             "foreign": {
-              "id": 81429,
-              "name": "ClaimsTableId",
+              "id": 77287,
+              "name": "ClaimedTableId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 81487,
-              "src": "194:13:142",
+              "referencedDeclaration": 77345,
+              "src": "184:14:133",
               "typeDescriptions": {}
             },
             "nameLocation": "-1:-1:-1"
@@ -134,5 +119,5 @@
     ],
     "license": "MIT"
   },
-  "id": 142
+  "id": 133
 }

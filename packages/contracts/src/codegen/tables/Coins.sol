@@ -21,15 +21,15 @@ import { ResourceId } from "@latticexyz/store/src/ResourceId.sol";
 import { RESOURCE_TABLE, RESOURCE_OFFCHAIN_TABLE } from "@latticexyz/store/src/storeResourceTypes.sol";
 
 ResourceId constant _tableId = ResourceId.wrap(
-  bytes32(abi.encodePacked(RESOURCE_TABLE, bytes14(""), bytes16("Claims")))
+  bytes32(abi.encodePacked(RESOURCE_TABLE, bytes14(""), bytes16("Coins")))
 );
-ResourceId constant ClaimsTableId = _tableId;
+ResourceId constant CoinsTableId = _tableId;
 
 FieldLayout constant _fieldLayout = FieldLayout.wrap(
   0x0004010004000000000000000000000000000000000000000000000000000000
 );
 
-library Claims {
+library Coins {
   /**
    * @notice Get the table values' field layout.
    * @return _fieldLayout The field layout for the table.
@@ -75,7 +75,7 @@ library Claims {
    */
   function getFieldNames() internal pure returns (string[] memory fieldNames) {
     fieldNames = new string[](1);
-    fieldNames[0] = "token";
+    fieldNames[0] = "value";
   }
 
   /**
@@ -93,9 +93,9 @@ library Claims {
   }
 
   /**
-   * @notice Get token.
+   * @notice Get value.
    */
-  function getToken(bytes32 key) internal view returns (uint32 token) {
+  function getValue(bytes32 key) internal view returns (uint32 value) {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
@@ -104,9 +104,9 @@ library Claims {
   }
 
   /**
-   * @notice Get token.
+   * @notice Get value.
    */
-  function _getToken(bytes32 key) internal view returns (uint32 token) {
+  function _getValue(bytes32 key) internal view returns (uint32 value) {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
@@ -115,9 +115,9 @@ library Claims {
   }
 
   /**
-   * @notice Get token.
+   * @notice Get value.
    */
-  function get(bytes32 key) internal view returns (uint32 token) {
+  function get(bytes32 key) internal view returns (uint32 value) {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
@@ -126,9 +126,9 @@ library Claims {
   }
 
   /**
-   * @notice Get token.
+   * @notice Get value.
    */
-  function _get(bytes32 key) internal view returns (uint32 token) {
+  function _get(bytes32 key) internal view returns (uint32 value) {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
@@ -137,43 +137,43 @@ library Claims {
   }
 
   /**
-   * @notice Set token.
+   * @notice Set value.
    */
-  function setToken(bytes32 key, uint32 token) internal {
+  function setValue(bytes32 key, uint32 value) internal {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
-    StoreSwitch.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((token)), _fieldLayout);
+    StoreSwitch.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((value)), _fieldLayout);
   }
 
   /**
-   * @notice Set token.
+   * @notice Set value.
    */
-  function _setToken(bytes32 key, uint32 token) internal {
+  function _setValue(bytes32 key, uint32 value) internal {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
-    StoreCore.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((token)), _fieldLayout);
+    StoreCore.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((value)), _fieldLayout);
   }
 
   /**
-   * @notice Set token.
+   * @notice Set value.
    */
-  function set(bytes32 key, uint32 token) internal {
+  function set(bytes32 key, uint32 value) internal {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
-    StoreSwitch.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((token)), _fieldLayout);
+    StoreSwitch.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((value)), _fieldLayout);
   }
 
   /**
-   * @notice Set token.
+   * @notice Set value.
    */
-  function _set(bytes32 key, uint32 token) internal {
+  function _set(bytes32 key, uint32 value) internal {
     bytes32[] memory _keyTuple = new bytes32[](1);
     _keyTuple[0] = key;
 
-    StoreCore.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((token)), _fieldLayout);
+    StoreCore.setStaticField(_tableId, _keyTuple, 0, abi.encodePacked((value)), _fieldLayout);
   }
 
   /**
@@ -200,8 +200,8 @@ library Claims {
    * @notice Tightly pack static (fixed length) data using this table's schema.
    * @return The static data, encoded into a sequence of bytes.
    */
-  function encodeStatic(uint32 token) internal pure returns (bytes memory) {
-    return abi.encodePacked(token);
+  function encodeStatic(uint32 value) internal pure returns (bytes memory) {
+    return abi.encodePacked(value);
   }
 
   /**
@@ -210,8 +210,8 @@ library Claims {
    * @return The lengths of the dynamic fields (packed into a single bytes32 value).
    * @return The dyanmic (variable length) data, encoded into a sequence of bytes.
    */
-  function encode(uint32 token) internal pure returns (bytes memory, PackedCounter, bytes memory) {
-    bytes memory _staticData = encodeStatic(token);
+  function encode(uint32 value) internal pure returns (bytes memory, PackedCounter, bytes memory) {
+    bytes memory _staticData = encodeStatic(value);
 
     PackedCounter _encodedLengths;
     bytes memory _dynamicData;

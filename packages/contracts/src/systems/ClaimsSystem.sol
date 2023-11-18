@@ -2,7 +2,7 @@
 pragma solidity >=0.8.21;
 
 import {System} from "@latticexyz/world/src/System.sol";
-import {Claims} from "../codegen/index.sol";
+import {Claimed, Coins} from "../codegen/index.sol";
 
 function addressToEntityKey(address addr) pure returns (bytes32) {
     return bytes32(uint256(uint160(addr)));
@@ -14,7 +14,14 @@ interface IERC721 {
 
 contract ClaimsSystem is System {
     function claim(address collection, uint32 tokenid) public {
+        bytes32 sender = addressToEntityKey(_msgSender());
+        // The sender must be the onwer of the nft
         require(IERC721(collection).ownerOf(tokenid) == _msgSender(), "invalid owner");
-        Claims.set(addressToEntityKey(_msgSender()), tokenid);
+        // The token must not be already used
+        require(Claimed.get(collection, tokenid) == false, "already claimed");
+        // Save the token as used
+        Claimed.set(collection, tokenid, true);
+        // Give the user some reward
+        Coins.set(sender, Coins.get(sender) + 1);
     }
 }

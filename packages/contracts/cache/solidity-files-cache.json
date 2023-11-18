@@ -2699,50 +2699,6 @@
         }
       }
     },
-    "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdAssertions.sol": {
-      "lastModificationDate": 1698588682671,
-      "contentHash": "6cc2858240bcd443debbbf075490e325",
-      "sourceName": "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdAssertions.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdMath.sol",
-        "node_modules/ds-test/src/test.sol"
-      ],
-      "versionRequirement": ">=0.6.2, <0.9.0",
-      "artifacts": {
-        "StdAssertions": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "StdAssertions.sol/StdAssertions.json"
-        }
-      }
-    },
     "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdChains.sol": {
       "lastModificationDate": 1698588682713,
       "contentHash": "aff0685683a41d8e314d64aef646fe6f",
@@ -2830,88 +2786,6 @@
         },
         "StdCheatsSafe": {
           "0.8.21+commit.d9974bed.Darwin.appleclang": "StdCheats.sol/StdCheatsSafe.json"
-        }
-      }
-    },
-    "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdError.sol": {
-      "lastModificationDate": 1683144173021,
-      "contentHash": "64c896e1276a291776e5ea5aecb3870a",
-      "sourceName": "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdError.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.6.2, <0.9.0",
-      "artifacts": {
-        "stdError": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "StdError.sol/stdError.json"
-        }
-      }
-    },
-    "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdInvariant.sol": {
-      "lastModificationDate": 1698588682715,
-      "contentHash": "6d12d54c05754ad4e03066726dca3a84",
-      "sourceName": "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdInvariant.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.6.2, <0.9.0",
-      "artifacts": {
-        "StdInvariant": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "StdInvariant.sol/StdInvariant.json"
         }
       }
     },
@@ -4175,142 +4049,6 @@
         }
       }
     },
-    "node_modules/@latticexyz/world/test/MudTest.t.sol": {
-      "lastModificationDate": 1698588688260,
-      "contentHash": "a72eacfc9761fd1822eea146dcc92495",
-      "sourceName": "node_modules/@latticexyz/world/test/MudTest.t.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Bytes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/FieldLayout.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Hook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IERC165.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreData.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreErrors.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreEvents.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreHook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRead.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRegistration.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreWrite.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Memory.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/PackedCounter.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/ResourceId.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Schema.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Slice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Storage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreCore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/index.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Hooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/ResourceIds.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/StoreHooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Tables.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/constants.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/leftMask.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeHookTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/DecodeSlice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/TightCoder.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/version.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Base.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdAssertions.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdChains.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdCheats.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdError.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdInvariant.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdJson.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdMath.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStorage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStyle.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdUtils.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Vm.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console2.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/interfaces/IMulticall3.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/safeconsole.sol",
-        "node_modules/@latticexyz/schema-type/src/solidity/SchemaType.sol",
-        "node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "node_modules/ds-test/src/test.sol",
-        "node_modules/forge-std/src/Test.sol"
-      ],
-      "versionRequirement": ">=0.8.21",
-      "artifacts": {
-        "MudTest": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "MudTest.t.sol/MudTest.json"
-        }
-      }
-    },
-    "node_modules/ds-test/src/test.sol": {
-      "lastModificationDate": 1698588682790,
-      "contentHash": "9febff9d09f18af5306669dc276c4c43",
-      "sourceName": "node_modules/ds-test/src/test.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.5.0",
-      "artifacts": {
-        "DSTest": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "test.sol/DSTest.json"
-        }
-      }
-    },
     "node_modules/forge-std/src/Script.sol": {
       "lastModificationDate": 1698588682671,
       "contentHash": "a8896f13ebff9ed23cce0fcb7f8f1984",
@@ -4366,65 +4104,6 @@
         }
       }
     },
-    "node_modules/forge-std/src/Test.sol": {
-      "lastModificationDate": 1698588682716,
-      "contentHash": "c67db2c47c2e757cc33d38d6db0b1562",
-      "sourceName": "node_modules/forge-std/src/Test.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Base.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdAssertions.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdChains.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdCheats.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdError.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdInvariant.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdJson.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdMath.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStorage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStyle.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdUtils.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Vm.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console2.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/interfaces/IMulticall3.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/safeconsole.sol",
-        "node_modules/ds-test/src/test.sol"
-      ],
-      "versionRequirement": ">=0.6.2, <0.9.0",
-      "artifacts": {
-        "Test": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "Test.sol/Test.json"
-        }
-      }
-    },
     "node_modules/forge-std/src/console.sol": {
       "lastModificationDate": 1683144173023,
       "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
@@ -4467,8 +4146,8 @@
       }
     },
     "script/PostDeploy.s.sol": {
-      "lastModificationDate": 1700254341845,
-      "contentHash": "76a2785c0fecef6c691eeac97ce8abef",
+      "lastModificationDate": 1700297646767,
+      "contentHash": "6f4369e91d3e1c9f0a077b5aa36a507b",
       "sourceName": "script/PostDeploy.s.sol",
       "solcConfig": {
         "settings": {
@@ -4566,25 +4245,14 @@
         "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/safeconsole.sol",
         "node_modules/@latticexyz/schema-type/src/solidity/SchemaType.sol",
         "node_modules/@latticexyz/store/src/Bytes.sol",
-        "node_modules/@latticexyz/store/src/FieldLayout.sol",
         "node_modules/@latticexyz/store/src/IStore.sol",
-        "node_modules/@latticexyz/store/src/Memory.sol",
-        "node_modules/@latticexyz/store/src/PackedCounter.sol",
         "node_modules/@latticexyz/store/src/ResourceId.sol",
-        "node_modules/@latticexyz/store/src/Schema.sol",
-        "node_modules/@latticexyz/store/src/Slice.sol",
-        "node_modules/@latticexyz/store/src/StoreCore.sol",
         "node_modules/@latticexyz/store/src/StoreSwitch.sol",
         "node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
         "node_modules/@latticexyz/world/src/codegen/interfaces/IBaseWorld.sol",
         "node_modules/forge-std/src/Script.sol",
         "node_modules/forge-std/src/console.sol",
-        "src/codegen/index.sol",
-        "src/codegen/tables/Claims.sol",
-        "src/codegen/tables/Tasks.sol",
         "src/codegen/world/IClaimsSystem.sol",
-        "src/codegen/world/ITasksSystem.sol",
         "src/codegen/world/IWorld.sol"
       ],
       "versionRequirement": ">=0.8.21",
@@ -4595,8 +4263,8 @@
       }
     },
     "src/codegen/index.sol": {
-      "lastModificationDate": 1700254424602,
-      "contentHash": "934b7cc5f895685c14caa0642364395e",
+      "lastModificationDate": 1700297781073,
+      "contentHash": "d9d07e0e652e610da9cc2bb32d7cf556",
       "sourceName": "src/codegen/index.sol",
       "solcConfig": {
         "settings": {
@@ -4674,8 +4342,8 @@
         "node_modules/@latticexyz/store/src/StoreSwitch.sol",
         "node_modules/@latticexyz/store/src/storeResourceTypes.sol",
         "node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "src/codegen/tables/Claims.sol",
-        "src/codegen/tables/Tasks.sol"
+        "src/codegen/tables/Claimed.sol",
+        "src/codegen/tables/Coins.sol"
       ],
       "versionRequirement": ">=0.8.21",
       "artifacts": {
@@ -4684,10 +4352,10 @@
         }
       }
     },
-    "src/codegen/tables/Claims.sol": {
-      "lastModificationDate": 1700254424600,
-      "contentHash": "a46e3acff44855b84489b0fb28077466",
-      "sourceName": "src/codegen/tables/Claims.sol",
+    "src/codegen/tables/Claimed.sol": {
+      "lastModificationDate": 1700297781071,
+      "contentHash": "54a1f9fa11aeeb0a34898a9c06adea05",
+      "sourceName": "src/codegen/tables/Claimed.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -4767,15 +4435,15 @@
       ],
       "versionRequirement": ">=0.8.21",
       "artifacts": {
-        "Claims": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "Claims.sol/Claims.json"
+        "Claimed": {
+          "0.8.21+commit.d9974bed.Darwin.appleclang": "Claimed.sol/Claimed.json"
         }
       }
     },
-    "src/codegen/tables/Tasks.sol": {
-      "lastModificationDate": 1700254424594,
-      "contentHash": "17b42b73f80feccc74c5cabc2d27f11e",
-      "sourceName": "src/codegen/tables/Tasks.sol",
+    "src/codegen/tables/Coins.sol": {
+      "lastModificationDate": 1700297781071,
+      "contentHash": "d314ae8f4c3eadee34685b014cf49a83",
+      "sourceName": "src/codegen/tables/Coins.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -4855,8 +4523,8 @@
       ],
       "versionRequirement": ">=0.8.21",
       "artifacts": {
-        "Tasks": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "Tasks.sol/Tasks.json"
+        "Coins": {
+          "0.8.21+commit.d9974bed.Darwin.appleclang": "Coins.sol/Coins.json"
         }
       }
     },
@@ -4901,50 +4569,9 @@
         }
       }
     },
-    "src/codegen/world/ITasksSystem.sol": {
-      "lastModificationDate": 1700253692923,
-      "contentHash": "5628af36943e2788841914a02de45ae1",
-      "sourceName": "src/codegen/world/ITasksSystem.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.8.21",
-      "artifacts": {
-        "ITasksSystem": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "ITasksSystem.sol/ITasksSystem.json"
-        }
-      }
-    },
     "src/codegen/world/IWorld.sol": {
-      "lastModificationDate": 1700254424601,
-      "contentHash": "4c458808f2091b46f2370e2e0ca0ef69",
+      "lastModificationDate": 1700297781071,
+      "contentHash": "a1db72cfdf32684bd56a31322b94cf46",
       "sourceName": "src/codegen/world/IWorld.sol",
       "solcConfig": {
         "settings": {
@@ -5034,8 +4661,7 @@
         "node_modules/@latticexyz/store/src/StoreSwitch.sol",
         "node_modules/@latticexyz/store/src/storeResourceTypes.sol",
         "node_modules/@latticexyz/world/src/codegen/interfaces/IBaseWorld.sol",
-        "src/codegen/world/IClaimsSystem.sol",
-        "src/codegen/world/ITasksSystem.sol"
+        "src/codegen/world/IClaimsSystem.sol"
       ],
       "versionRequirement": ">=0.8.21",
       "artifacts": {
@@ -5045,8 +4671,8 @@
       }
     },
     "src/systems/ClaimsSystem.sol": {
-      "lastModificationDate": 1700254341850,
-      "contentHash": "27ee834d09fb1b7148364cf8b7b9d79a",
+      "lastModificationDate": 1700297786428,
+      "contentHash": "58413fd89bf83da7dc69deba7dc25afb",
       "sourceName": "src/systems/ClaimsSystem.sol",
       "solcConfig": {
         "settings": {
@@ -5130,8 +4756,8 @@
         "node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
         "node_modules/@latticexyz/world/src/System.sol",
         "src/codegen/index.sol",
-        "src/codegen/tables/Claims.sol",
-        "src/codegen/tables/Tasks.sol"
+        "src/codegen/tables/Claimed.sol",
+        "src/codegen/tables/Coins.sol"
       ],
       "versionRequirement": ">=0.8.21",
       "artifacts": {
@@ -5140,234 +4766,6 @@
         },
         "IERC721": {
           "0.8.21+commit.d9974bed.Darwin.appleclang": "ClaimsSystem.sol/IERC721.json"
-        }
-      }
-    },
-    "src/systems/TasksSystem.sol": {
-      "lastModificationDate": 1700254341850,
-      "contentHash": "64a49d98a35d6686c05d361a48c9c97a",
-      "sourceName": "src/systems/TasksSystem.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Bytes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/FieldLayout.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Hook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IERC165.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreData.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreErrors.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreEvents.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreHook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRead.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRegistration.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreWrite.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Memory.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/PackedCounter.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/ResourceId.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Schema.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Slice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Storage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreCore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/index.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Hooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/ResourceIds.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/StoreHooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Tables.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/constants.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/leftMask.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeHookTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/DecodeSlice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/TightCoder.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/version.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IERC165.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IWorldContextConsumer.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/WorldContext.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/revertWithBytes.sol",
-        "node_modules/@latticexyz/schema-type/src/solidity/SchemaType.sol",
-        "node_modules/@latticexyz/store/src/Bytes.sol",
-        "node_modules/@latticexyz/store/src/FieldLayout.sol",
-        "node_modules/@latticexyz/store/src/IStore.sol",
-        "node_modules/@latticexyz/store/src/Memory.sol",
-        "node_modules/@latticexyz/store/src/PackedCounter.sol",
-        "node_modules/@latticexyz/store/src/ResourceId.sol",
-        "node_modules/@latticexyz/store/src/Schema.sol",
-        "node_modules/@latticexyz/store/src/Slice.sol",
-        "node_modules/@latticexyz/store/src/StoreCore.sol",
-        "node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "node_modules/@latticexyz/world/src/System.sol",
-        "src/codegen/index.sol",
-        "src/codegen/tables/Claims.sol",
-        "src/codegen/tables/Tasks.sol"
-      ],
-      "versionRequirement": ">=0.8.21",
-      "artifacts": {
-        "TasksSystem": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "TasksSystem.sol/TasksSystem.json"
-        }
-      }
-    },
-    "test/TasksTest.t.sol": {
-      "lastModificationDate": 1700254340927,
-      "contentHash": "f9ae89beade7bdb3aac26052288fb389",
-      "sourceName": "test/TasksTest.t.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 3000
-          },
-          "metadata": {
-            "useLiteralContent": false,
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "paris",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Bytes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/FieldLayout.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Hook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IERC165.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreData.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreErrors.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreEvents.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreHook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRead.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreRegistration.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/IStoreWrite.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Memory.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/PackedCounter.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/ResourceId.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Schema.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Slice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/Storage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreCore.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/index.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Hooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/ResourceIds.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/StoreHooks.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/codegen/tables/Tables.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/constants.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/leftMask.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeHookTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/DecodeSlice.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/tightcoder/TightCoder.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+store@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/store/src/version.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IERC165.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IModule.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/ISystemHook.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IWorldContextConsumer.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IWorldErrors.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/IWorldKernel.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/WorldContext.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/WorldResourceId.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/IAccessManagementSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/IBalanceTransferSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/IBatchCallSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/ICoreSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/IModuleInstallationSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/codegen/interfaces/IWorldRegistrationSystem.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/constants.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/modules/core/types.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/revertWithBytes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/worldResourceTypes.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Base.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdAssertions.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdChains.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdCheats.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdError.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdInvariant.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdJson.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdMath.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStorage.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdStyle.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/StdUtils.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/Vm.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/console2.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/interfaces/IMulticall3.sol",
-        "/private/tmp/react/keoken2/node_modules/.pnpm/github.com+foundry-rs+forge-std@74cfb77e308dd188d2f58864aaf44963ae6b88b1/node_modules/forge-std/src/safeconsole.sol",
-        "node_modules/@latticexyz/schema-type/src/solidity/SchemaType.sol",
-        "node_modules/@latticexyz/store/src/Bytes.sol",
-        "node_modules/@latticexyz/store/src/FieldLayout.sol",
-        "node_modules/@latticexyz/store/src/IStore.sol",
-        "node_modules/@latticexyz/store/src/Memory.sol",
-        "node_modules/@latticexyz/store/src/PackedCounter.sol",
-        "node_modules/@latticexyz/store/src/ResourceId.sol",
-        "node_modules/@latticexyz/store/src/Schema.sol",
-        "node_modules/@latticexyz/store/src/Slice.sol",
-        "node_modules/@latticexyz/store/src/StoreCore.sol",
-        "node_modules/@latticexyz/store/src/StoreSwitch.sol",
-        "node_modules/@latticexyz/store/src/storeResourceTypes.sol",
-        "node_modules/@latticexyz/store/src/tightcoder/EncodeArray.sol",
-        "node_modules/@latticexyz/world/src/codegen/interfaces/IBaseWorld.sol",
-        "node_modules/@latticexyz/world/test/MudTest.t.sol",
-        "node_modules/ds-test/src/test.sol",
-        "node_modules/forge-std/src/Test.sol",
-        "src/codegen/index.sol",
-        "src/codegen/tables/Claims.sol",
-        "src/codegen/tables/Tasks.sol",
-        "src/codegen/world/IClaimsSystem.sol",
-        "src/codegen/world/ITasksSystem.sol",
-        "src/codegen/world/IWorld.sol"
-      ],
-      "versionRequirement": ">=0.8.21",
-      "artifacts": {
-        "TasksTest": {
-          "0.8.21+commit.d9974bed.Darwin.appleclang": "TasksTest.t.sol/TasksTest.json"
         }
       }
     }
