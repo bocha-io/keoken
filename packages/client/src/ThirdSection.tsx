@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Metamask } from "./Header";
 import { BrowserProvider, Contract } from "ethers";
 import abi from "contracts/out/IWorld.sol/IWorld.abi.json";
+import { useMUD } from "./MUDContext";
 
 async function claimNFT(collection: string, id: string) {
   try {
@@ -58,10 +59,24 @@ export const ThirdSection = ({
 }) => {
   const [nfts, setNfts] = useState([]);
 
-  const tempData = [
-    { wallet: "0x0000000000000000000000000000000000000", coins: 1000 },
-    { wallet: "0x0000000000000000000000000000000000001", coins: 2000 },
-  ];
+  // const tempData = [
+  //   { wallet: "0x0000000000000000000000000000000000000", coins: 1000 },
+  //   { wallet: "0x0000000000000000000000000000000000001", coins: 2000 },
+  // ];
+
+  const {
+    network: { useStore, tables },
+  } = useMUD();
+
+  const tempData = useStore((store) => {
+    const coins = Object.values(store.getRecords(tables.Coins));
+    console.log(coins);
+    return coins.map((e) => ({
+      wallet: e.key.key,
+      coins: e.value.value,
+    }));
+  });
+
   return (
     <div className="flex flex-col lg:flex-row h-fit md:min-h-screen text-center my-auto">
       <div className="w-[90vw] lg:w-[45vw] my-auto mx-auto">
