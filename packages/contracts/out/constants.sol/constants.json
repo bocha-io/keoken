@@ -9,7 +9,7 @@
     "linkReferences": {}
   },
   "ast": {
-    "absolutePath": "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/constants.sol",
+    "absolutePath": "/Users/hanchon/devel/bocha-io/keoken/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/constants.sol",
     "id": 21208,
     "exportedSymbols": {
       "RESOURCE_NAMESPACE": [
@@ -28,7 +28,7 @@
         21189
       ],
       "ResourceId": [
-        63969
+        62261
       ],
       "STORE_NAMESPACE_ID": [
         21156
@@ -64,7 +64,7 @@
         "file": "@latticexyz/store/src/ResourceId.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 21208,
-        "sourceUnit": 64041,
+        "sourceUnit": 62333,
         "symbolAliases": [
           {
             "foreign": {
@@ -72,7 +72,7 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "68:10:47",
               "typeDescriptions": {}
             },
@@ -86,7 +86,7 @@
         "nodeType": "ImportDirective",
         "src": "127:79:47",
         "nodes": [],
-        "absolutePath": "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/worldResourceTypes.sol",
+        "absolutePath": "/Users/hanchon/devel/bocha-io/keoken/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/worldResourceTypes.sol",
         "file": "./worldResourceTypes.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 21208,
@@ -220,7 +220,7 @@
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
-          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
           "typeString": "ResourceId"
         },
         "typeName": {
@@ -233,13 +233,13 @@
               "280:10:47"
             ],
             "nodeType": "IdentifierPath",
-            "referencedDeclaration": 63969,
+            "referencedDeclaration": 62261,
             "src": "280:10:47"
           },
-          "referencedDeclaration": 63969,
+          "referencedDeclaration": 62261,
           "src": "280:10:47",
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -448,10 +448,10 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "321:10:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$63969_$",
+                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$62261_$",
                 "typeString": "type(ResourceId)"
               }
             },
@@ -465,7 +465,7 @@
             "nodeType": "MemberAccess",
             "src": "321:15:47",
             "typeDescriptions": {
-              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$63969_$",
+              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$62261_$",
               "typeString": "function (bytes32) pure returns (ResourceId)"
             }
           },
@@ -481,7 +481,7 @@
           "src": "321:95:47",
           "tryCall": false,
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -500,7 +500,7 @@
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
-          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
           "typeString": "ResourceId"
         },
         "typeName": {
@@ -513,13 +513,13 @@
               "419:10:47"
             ],
             "nodeType": "IdentifierPath",
-            "referencedDeclaration": 63969,
+            "referencedDeclaration": 62261,
             "src": "419:10:47"
           },
-          "referencedDeclaration": 63969,
+          "referencedDeclaration": 62261,
           "src": "419:10:47",
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -728,10 +728,10 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "460:10:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$63969_$",
+                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$62261_$",
                 "typeString": "type(ResourceId)"
               }
             },
@@ -745,7 +745,7 @@
             "nodeType": "MemberAccess",
             "src": "460:15:47",
             "typeDescriptions": {
-              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$63969_$",
+              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$62261_$",
               "typeString": "function (bytes32) pure returns (ResourceId)"
             }
           },
@@ -761,7 +761,7 @@
           "src": "460:95:47",
           "tryCall": false,
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -780,7 +780,7 @@
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
-          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
           "typeString": "ResourceId"
         },
         "typeName": {
@@ -793,13 +793,13 @@
               "558:10:47"
             ],
             "nodeType": "IdentifierPath",
-            "referencedDeclaration": 63969,
+            "referencedDeclaration": 62261,
             "src": "558:10:47"
           },
-          "referencedDeclaration": 63969,
+          "referencedDeclaration": 62261,
           "src": "558:10:47",
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -959,10 +959,10 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "598:10:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$63969_$",
+                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$62261_$",
                 "typeString": "type(ResourceId)"
               }
             },
@@ -976,7 +976,7 @@
             "nodeType": "MemberAccess",
             "src": "598:15:47",
             "typeDescriptions": {
-              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$63969_$",
+              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$62261_$",
               "typeString": "function (bytes32) pure returns (ResourceId)"
             }
           },
@@ -992,7 +992,7 @@
           "src": "598:93:47",
           "tryCall": false,
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -1011,7 +1011,7 @@
         "stateVariable": false,
         "storageLocation": "default",
         "typeDescriptions": {
-          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+          "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
           "typeString": "ResourceId"
         },
         "typeName": {
@@ -1024,13 +1024,13 @@
               "694:10:47"
             ],
             "nodeType": "IdentifierPath",
-            "referencedDeclaration": 63969,
+            "referencedDeclaration": 62261,
             "src": "694:10:47"
           },
-          "referencedDeclaration": 63969,
+          "referencedDeclaration": 62261,
           "src": "694:10:47",
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },
@@ -1239,10 +1239,10 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "737:10:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$63969_$",
+                "typeIdentifier": "t_type$_t_userDefinedValueType$_ResourceId_$62261_$",
                 "typeString": "type(ResourceId)"
               }
             },
@@ -1256,7 +1256,7 @@
             "nodeType": "MemberAccess",
             "src": "737:15:47",
             "typeDescriptions": {
-              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$63969_$",
+              "typeIdentifier": "t_function_wrap_pure$_t_bytes32_$returns$_t_userDefinedValueType$_ResourceId_$62261_$",
               "typeString": "function (bytes32) pure returns (ResourceId)"
             }
           },
@@ -1272,7 +1272,7 @@
           "src": "737:101:47",
           "tryCall": false,
           "typeDescriptions": {
-            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+            "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
             "typeString": "ResourceId"
           }
         },

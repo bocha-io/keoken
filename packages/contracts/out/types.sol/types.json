@@ -9,11 +9,11 @@
     "linkReferences": {}
   },
   "ast": {
-    "absolutePath": "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/modules/core/types.sol",
+    "absolutePath": "/Users/hanchon/devel/bocha-io/keoken/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/modules/core/types.sol",
     "id": 21233,
     "exportedSymbols": {
       "ResourceId": [
-        63969
+        62261
       ],
       "SystemCallData": [
         21220
@@ -46,7 +46,7 @@
         "file": "@latticexyz/store/src/ResourceId.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 21233,
-        "sourceUnit": 64041,
+        "sourceUnit": 62333,
         "symbolAliases": [
           {
             "foreign": {
@@ -54,7 +54,7 @@
               "name": "ResourceId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "68:10:48",
               "typeDescriptions": {}
             },
@@ -88,7 +88,7 @@
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+              "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
               "typeString": "ResourceId"
             },
             "typeName": {
@@ -101,13 +101,13 @@
                   "368:10:48"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 63969,
+                "referencedDeclaration": 62261,
                 "src": "368:10:48"
               },
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "368:10:48",
               "typeDescriptions": {
-                "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+                "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
                 "typeString": "ResourceId"
               }
             },
@@ -199,7 +199,7 @@
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+              "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
               "typeString": "ResourceId"
             },
             "typeName": {
@@ -212,13 +212,13 @@
                   "812:10:48"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 63969,
+                "referencedDeclaration": 62261,
                 "src": "812:10:48"
               },
-              "referencedDeclaration": 63969,
+              "referencedDeclaration": 62261,
               "src": "812:10:48",
               "typeDescriptions": {
-                "typeIdentifier": "t_userDefinedValueType$_ResourceId_$63969",
+                "typeIdentifier": "t_userDefinedValueType$_ResourceId_$62261",
                 "typeString": "ResourceId"
               }
             },

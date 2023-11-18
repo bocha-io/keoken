@@ -1,0 +1,240 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "tokenid",
+          "type": "uint32"
+        }
+      ],
+      "name": "claim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "claim(address,uint32)": "c6a56990"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"collection\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"tokenid\",\"type\":\"uint32\"}],\"name\":\"claim\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IClaimSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IClaimSystem.sol\":\"IClaimSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IClaimSystem.sol\":{\"keccak256\":\"0x610ac63922c57a04d2ffa6b52aad90b471cf2c4d94eba3dcffda390b73b790e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3558d8d89a92014cb0c3be5c66fab3287461c7ce948ee9bc1c9610f6b8b5bfbe\",\"dweb:/ipfs/QmUHUbuKPeyb7VZ7H2UfCxKbiGzh5uFgD341K8q1gozzQ2\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "collection",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "tokenid",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "claim"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IClaimSystem.sol": "IClaimSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IClaimSystem.sol": {
+        "keccak256": "0x610ac63922c57a04d2ffa6b52aad90b471cf2c4d94eba3dcffda390b73b790e0",
+        "urls": [
+          "bzz-raw://3558d8d89a92014cb0c3be5c66fab3287461c7ce948ee9bc1c9610f6b8b5bfbe",
+          "dweb:/ipfs/QmUHUbuKPeyb7VZ7H2UfCxKbiGzh5uFgD341K8q1gozzQ2"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IClaimSystem.sol",
+    "id": 77992,
+    "exportedSymbols": {
+      "IClaimSystem": [
+        77991
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:309:135",
+    "nodes": [
+      {
+        "id": 77982,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:135",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 77991,
+        "nodeType": "ContractDefinition",
+        "src": "251:89:135",
+        "nodes": [
+          {
+            "id": 77990,
+            "nodeType": "FunctionDefinition",
+            "src": "278:60:135",
+            "nodes": [],
+            "functionSelector": "c6a56990",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claim",
+            "nameLocation": "287:5:135",
+            "parameters": {
+              "id": 77988,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 77985,
+                  "mutability": "mutable",
+                  "name": "collection",
+                  "nameLocation": "301:10:135",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77990,
+                  "src": "293:18:135",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 77984,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:135",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 77987,
+                  "mutability": "mutable",
+                  "name": "tokenid",
+                  "nameLocation": "320:7:135",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77990,
+                  "src": "313:14:135",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 77986,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "313:6:135",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:36:135"
+            },
+            "returnParameters": {
+              "id": 77989,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "337:0:135"
+            },
+            "scope": 77991,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IClaimSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 77983,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:142:135",
+          "text": " @title IClaimSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          77991
+        ],
+        "name": "IClaimSystem",
+        "nameLocation": "261:12:135",
+        "scope": 77992,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 135
+}

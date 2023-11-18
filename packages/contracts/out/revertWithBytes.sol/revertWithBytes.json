@@ -9,7 +9,7 @@
     "linkReferences": {}
   },
   "ast": {
-    "absolutePath": "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/revertWithBytes.sol",
+    "absolutePath": "/Users/hanchon/devel/bocha-io/keoken/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/revertWithBytes.sol",
     "id": 21243,
     "exportedSymbols": {
       "revertWithBytes": [

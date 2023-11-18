@@ -1,0 +1,281 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "collection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "tokenid",
+          "type": "uint32"
+        }
+      ],
+      "name": "increment",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "increment(address,uint32)": "1b567eb5"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"collection\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"tokenid\",\"type\":\"uint32\"}],\"name\":\"increment\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This interface is automatically generated from the corresponding system contract. Do not edit manually.\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IIncrementSystem\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/codegen/world/IIncrementSystem.sol\":\"IIncrementSystem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":3000},\"remappings\":[\":@latticexyz/=node_modules/@latticexyz/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\"]},\"sources\":{\"src/codegen/world/IIncrementSystem.sol\":{\"keccak256\":\"0x2ccd811d57e328b3ec4f2714ead997bc19a88f384e7d7217f32c0116eb687841\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4912349b55ba37a1be0bd450967ce55e766635287ac48bd58e97878338bfaf39\",\"dweb:/ipfs/QmZ7BAoe4533qAJjT1SgmS7gfJEtwFWXWthpmhrsodDsj8\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "collection",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "tokenid",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "increment",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@latticexyz/=node_modules/@latticexyz/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 3000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/codegen/world/IIncrementSystem.sol": "IIncrementSystem"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/codegen/world/IIncrementSystem.sol": {
+        "keccak256": "0x2ccd811d57e328b3ec4f2714ead997bc19a88f384e7d7217f32c0116eb687841",
+        "urls": [
+          "bzz-raw://4912349b55ba37a1be0bd450967ce55e766635287ac48bd58e97878338bfaf39",
+          "dweb:/ipfs/QmZ7BAoe4533qAJjT1SgmS7gfJEtwFWXWthpmhrsodDsj8"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/codegen/world/IIncrementSystem.sol",
+    "id": 78005,
+    "exportedSymbols": {
+      "IIncrementSystem": [
+        78004
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:338:136",
+    "nodes": [
+      {
+        "id": 77993,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:136",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".21"
+        ]
+      },
+      {
+        "id": 78004,
+        "nodeType": "ContractDefinition",
+        "src": "255:114:136",
+        "nodes": [
+          {
+            "id": 78003,
+            "nodeType": "FunctionDefinition",
+            "src": "286:81:136",
+            "nodes": [],
+            "functionSelector": "1b567eb5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increment",
+            "nameLocation": "295:9:136",
+            "parameters": {
+              "id": 77999,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 77996,
+                  "mutability": "mutable",
+                  "name": "collection",
+                  "nameLocation": "313:10:136",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 78003,
+                  "src": "305:18:136",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 77995,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:7:136",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 77998,
+                  "mutability": "mutable",
+                  "name": "tokenid",
+                  "nameLocation": "332:7:136",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 78003,
+                  "src": "325:14:136",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 77997,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "325:6:136",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "304:36:136"
+            },
+            "returnParameters": {
+              "id": 78002,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 78001,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 78003,
+                  "src": "359:6:136",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 78000,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "359:6:136",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "358:8:136"
+            },
+            "scope": 78004,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IIncrementSystem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 77994,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:146:136",
+          "text": " @title IIncrementSystem\n @dev This interface is automatically generated from the corresponding system contract. Do not edit manually."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          78004
+        ],
+        "name": "IIncrementSystem",
+        "nameLocation": "265:16:136",
+        "scope": 78005,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 136
+}

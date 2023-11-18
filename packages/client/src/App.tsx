@@ -3,6 +3,7 @@ import { useMUD } from "./MUDContext";
 import { useState } from "react";
 import { Header } from "./Header";
 import { FirstSection } from "./FirstSection";
+import { SecondSection } from "./SecondSection";
 
 let abi = [
   {
@@ -64,6 +65,10 @@ export const App = () => {
       <section className="bg-green-300 h-fit md:min-h-screen flex flex-col">
         <Header />
         <FirstSection />
+      </section>
+
+      <section id="second" className="bg-white h-fit md:min-h-screen">
+        <SecondSection />
       </section>
 
       <button

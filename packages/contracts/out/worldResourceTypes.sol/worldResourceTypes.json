@@ -9,7 +9,7 @@
     "linkReferences": {}
   },
   "ast": {
-    "absolutePath": "/private/tmp/react/keoken2/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/worldResourceTypes.sol",
+    "absolutePath": "/Users/hanchon/devel/bocha-io/keoken/node_modules/.pnpm/@latticexyz+world@2.0.0-next.14_typescript@5.1.6/node_modules/@latticexyz/world/src/worldResourceTypes.sol",
     "id": 21276,
     "exportedSymbols": {
       "MASK_RESOURCE_MODULE": [
@@ -28,13 +28,13 @@
         21251
       ],
       "RESOURCE_OFFCHAIN_TABLE": [
-        68464
+        66756
       ],
       "RESOURCE_SYSTEM": [
         21257
       ],
       "RESOURCE_TABLE": [
-        68460
+        66752
       ]
     },
     "nodeType": "SourceUnit",
@@ -61,7 +61,7 @@
         "file": "@latticexyz/store/src/storeResourceTypes.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 21276,
-        "sourceUnit": 68465,
+        "sourceUnit": 66757,
         "symbolAliases": [
           {
             "foreign": {
@@ -69,7 +69,7 @@
               "name": "RESOURCE_TABLE",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 68460,
+              "referencedDeclaration": 66752,
               "src": "68:14:50",
               "typeDescriptions": {}
             },
@@ -81,7 +81,7 @@
               "name": "RESOURCE_OFFCHAIN_TABLE",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 68464,
+              "referencedDeclaration": 66756,
               "src": "84:23:50",
               "typeDescriptions": {}
             },
