@@ -1,6 +1,24 @@
 import { useState } from "react";
 import { Metamask } from "./Header";
 import { testData } from "./testData";
+import { BrowserProvider, Contract } from "ethers";
+import abi from "contracts/out/IWorld.sol/IWorld.abi.json";
+
+async function claimNFT(collection: string, id: string) {
+  console.log(Number(id));
+  return;
+  const signer = new BrowserProvider(window.ethereum).getSigner();
+  let awaitedSigner = await signer;
+  console.log(signer);
+  let c = new Contract(
+    "0x6e9474e9c83676b9a71133ff96db43e7aa0a4342",
+    abi,
+    awaitedSigner,
+  );
+  console.log(c);
+  let tx = c.claim(collection, 1);
+  console.log(tx);
+}
 
 async function getNFTS(
   address: string,
@@ -97,7 +115,12 @@ export const ThirdSection = ({
                               e.id.substring(e.id.length - 4, e.id.length)
                           }
                         </p>
-                        <button className="p-2 m-2 border-2 border-black rounded-xl cursor-pointer">
+                        <button
+                          className="p-2 m-2 border-2 border-black rounded-xl cursor-pointer"
+                          onClick={async () =>
+                            await claimNFT(e.collection, e.id)
+                          }
+                        >
                           CLAIM
                         </button>
                       </div>

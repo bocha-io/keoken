@@ -87,28 +87,6 @@ export const App = () => {
       <section id="footer" className="bg-[#E9FFB4] h-content">
         <Footer />
       </section>
-
-      <button
-        className="hidden"
-        onClick={async (e) => {
-          e.preventDefault();
-          // let address = await getMetamaskAddress();
-          // console.log(address);
-          const signer = new BrowserProvider(window.ethereum).getSigner();
-          let awaitedSigner = await signer;
-          console.log(signer);
-          let c = new Contract(
-            "0x6e9474e9c83676b9a71133ff96db43e7aa0a4342",
-            abi,
-            awaitedSigner,
-          );
-          console.log(c);
-          let tx = c.claim("0x6e9474e9c83676b9a71133ff96db43e7aa0a4342", 1);
-          console.log(tx);
-        }}
-      >
-        try mm
-      </button>
     </>
   );
 };
